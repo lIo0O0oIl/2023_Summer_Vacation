@@ -8,6 +8,18 @@ public class DummyObjectCreator : MonoBehaviour
 
     GameObject dummyObj;
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            CreateObject();
+        }
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            DestroyObjects();
+        }
+    }
+
     void CreateObject()
     {
             for (int i = 0; i < numberOfObjects; i++)
@@ -23,6 +35,7 @@ public class DummyObjectCreator : MonoBehaviour
         foreach (GameObject go in dummyObjs)
         {
             Destroy(go);
+            //DestroyImmediate(go);   // 즉시 지워준다.
         }
     }
 }
