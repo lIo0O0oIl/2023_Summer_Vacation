@@ -19,10 +19,19 @@ public class TankAIBenchmark : MonoBehaviour
         }
     }
 
+    private int interval = 3;
+
     // Update is called once per frame
     void Update()
     {
-        foreach (GameObject t in tanks)
+        if (Time.frameCount % interval == 0)
+        {
+            // 값비싼 함수 호출
+            // 갱신 주기가 매 프레임마다 필요치 않는 함수들
+        }
+
+
+        /*foreach (GameObject t in tanks)
         {
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             if (player != null)
@@ -30,6 +39,6 @@ public class TankAIBenchmark : MonoBehaviour
                 t.transform.LookAt(player.transform.position);
                 t.transform.Translate(0, 0, 0.05f);
             }
-        } 
+        } */
     }
 }
