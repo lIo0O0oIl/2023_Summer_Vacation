@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Text;
-using System;
 
 public class GoodString : MonoBehaviour
 {
@@ -26,7 +25,7 @@ public class GoodString : MonoBehaviour
         }
     }
 
-    String ConcatExample(string[] strArry)
+    string ConcatExample(string[] strArry)
     {
         _sb.Clear();
 
