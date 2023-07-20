@@ -259,6 +259,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e82503fb1b73cb41aa4aa6b85a7ba35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uiRootPrefab: {fileID: 2576174012961736290, guid: 590aa2712b776c14c8442b644d890eca, type: 3}
+  loadinguiPrefab: {fileID: 681052676487907674, guid: 41f10b52131cb6c4fa2734820d05b1f5, type: 3}
+  logoUiPrefab: {fileID: 3936302833343343149, guid: 88f0d020515b1f7439a062d155be8129, type: 3}
+  titleUiPrefab: {fileID: 2650324845307300078, guid: 8ae0ecbd21e39a2489cf6fb3ba534f34, type: 3}
+  gameUiPrefab: {fileID: 3788861947597420089, guid: c2dba5d9f6f760245a9d08d03862618a, type: 3}
 --- !u!1 &1861630891
 GameObject:
   m_ObjectHideFlags: 0

@@ -31,6 +31,7 @@ public class CoroutineCaching : MonoBehaviour
         spawnWFS = new WaitForSeconds(spawnDelay);
 
         spawnCoVal = null;
+        //MGScene.Instance.Generate();
     }
 
     void Update()
